@@ -1,0 +1,18 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "helpers/view.php",
+            "src/Routes/routes.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "petersonmdev",
+            "email": "petersondmb@gmail.com"
+        }
+    ],
+    "require": {}
+}
