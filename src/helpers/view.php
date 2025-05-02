@@ -3,8 +3,8 @@
 if (!function_exists('render')) {
     function render(string $view, array $data = [], string $layout = 'layouts/main'): void 
     {
-        $viewPath = __DIR__ . '/../views/' . $view . '.php';
-        $layoutPath = $layout ? __DIR__ . '/../views/' . $layout . '.php' : null;
+        $viewPath = __DIR__ . '/../../views/' . $view . '.php';
+        $layoutPath = $layout ? __DIR__ . '/../../views/' . $layout . '.php' : null;
 
         if (!file_exists($viewPath)) {
             http_response_code(404);
@@ -32,19 +32,7 @@ if (!function_exists('renderBreadcrumb')) {
         $title = $title ?? $GLOBALS['site_name'];
         $subtitle = $subtitle ?? '';
 
-        require __DIR__ . '/../views/partials/breadcrumb.php';
-    }
-}
-
-if (!function_exists('asset_url')) {
-    function asset_url($path) {
-        return '/assets/' . $path;
-    }
-}
-
-if (!function_exists('public_path')) {
-    function public_path($path = '') {
-        return __DIR__ . '/../public/' . $path;
+        require __DIR__ . '/../../views/partials/breadcrumb.php';
     }
 }
 
@@ -53,7 +41,7 @@ if (!function_exists('getImagesFromDirectory')) {
     {
         $imageTypes = ['jpg', 'jpeg', 'png', 'webp'];
         $images = [];
-        $directoryPath = __DIR__ . '/../public/assets/images/fgl/' . $dir;
+        $directoryPath = __DIR__ . '/../../public/assets/images/fgl/' . $dir;
 
         if (is_dir($directoryPath)) {
             foreach ($imageTypes as $type) {
@@ -119,5 +107,12 @@ if (!function_exists('renderGalleryFromImages')) {
             }
             echo '</div>';
         }
+    }
+}
+
+if (!function_exists('createSlug')) {
+    function createSlug($str, $delimiter = '-'){
+        $slug = strtolower(trim(preg_replace('/[\s-]+/', $delimiter, preg_replace('/[^A-Za-z0-9-]+/', $delimiter, preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $str))))), $delimiter));
+        return $slug;
     }
 }

@@ -3,14 +3,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 logo-slider bg-white py-4">
-            <div><img src="https://placehold.co/200x100" alt="Cultura Inglesa"></div>
-            <div><img src="https://placehold.co/200x100" alt="Bayer"></div>
-            <div><img src="https://placehold.co/200x100" alt="Governo de Goiás"></div>
-            <div><img src="https://placehold.co/200x100" alt="Ambev"></div>
-            <div><img src="https://placehold.co/200x100" alt="Cultura Inglesa"></div>
-            <div><img src="https://placehold.co/200x100" alt="Bayer"></div>
-            <div><img src="https://placehold.co/200x100" alt="Governo de Goiás"></div>
-            <div><img src="https://placehold.co/200x100" alt="Ambev"></div>
+            <?php $clients = getImagesFromDirectory('clients'); 
+            if (!empty($clients)){
+              foreach ($clients as $index => $image) { ?>
+              <div><img src="<?=$image?>" alt="<?=$index?>"></div>
+            <?php }
+            } ?>
           </div>
           <div class="col-12 footer-cta">
             <h1 class="poppins-black title py-4">ELEVE SEU PROJETO A OUTRO NÍVEL</h1>
@@ -21,8 +19,8 @@
     </section>
 
     <footer class="footer-main footer-fgl">      
-      <div class="container-fluid bg-secondary-fgl">
-        <div class="container">        
+      <div class="container-fluid bg-secondary-fgl p-0">
+        <div class="container p-0">
           <div class="footer-top">            
               <div class="row">
                 <div class="col-md-4 col-12 mb-4">

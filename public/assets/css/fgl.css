@@ -427,7 +427,7 @@ li.item.item-menu.item-menu-last-icons ul li:last-child {
 }
 
 .navbar-fgl .logo-mobile img{
-  width: 80px;
+  width: 140px;
 }
 
 .nav-content-search {
@@ -983,7 +983,7 @@ ol.list-filter-fgl li:before {
 .section-category .carousel-indicators,
 .section-product-sugestion .carousel-indicators,
 .section-product .carousel-indicators  {
-  bottom: -50px;
+  bottom: -90px;
 }
 
 .section-products-featured ol.carousel-indicators li,
@@ -994,7 +994,7 @@ ol.list-filter-fgl li:before {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #636363;
+  background: red;
   border: none;
 }
 
@@ -1069,6 +1069,7 @@ ol.list-filter-fgl li:before {
 .logo-slider img {
   height: 50px;
   margin: 0 auto;
+  filter: grayscale(1);
 }
 
 .footer-cta {
@@ -1250,21 +1251,40 @@ ol.list-filter-fgl li:before {
 
 /* Produto simples */
 
+.carousel-vertical {
+  max-width: 115px;
+  max-height: 450px;
+  overflow: overlay;
+  position: relative;
+}
+
+.carousel-vertical ul li {
+  width: 100%;
+}
+
 .carousel-vertical a {
   width: 100%;
 }
 
 .carousel-vertical a.nav-link {
   width: 100%;
-  height: 150px;
+  height: 85px;
   padding: 0;
   overflow: hidden;
-  margin-bottom: 15px;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  object-fit: cover;
+  display: block;
 }
 
 .carousel-vertical a.nav-link.active {
-  border: solid 4px #CC2B00;
+  border: solid 3px #CC2B00;
+}
+
+.carousel-vertical a.nav-link img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .carousel-vertical .img-product {
@@ -1272,15 +1292,22 @@ ol.list-filter-fgl li:before {
 }
 
 #productSimple .carousel-item {
-  border-radius: 5px;
-  max-height: 600px;
+  max-height: 450px;
   overflow: hidden;
+}
+
+#productSimple .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 #productSimple figure.zoom {
   background-position: 50% 50%;
-  position: relative;
-  width: 500px;
+  position: relative!important;
+  width: 100%!important;
   overflow: hidden;
   cursor: zoom-in;
 }
@@ -1291,6 +1318,31 @@ ol.list-filter-fgl li:before {
   transition: opacity .5s;
   display: block;
   width: 100%;
+}
+
+#productSimple .carousel-indicators {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+#productSimple .carousel-indicators li.active {
+  background: #CC2B00;
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  border: solid #CC2B00 3px;
+}
+
+#productSimple .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 5px 7px;
+  background: #CC2B00;
+  opacity: 1;
+  flex: none;
 }
 
 .content-price-product img {
@@ -1356,7 +1408,7 @@ ol.list-filter-fgl li:before {
 
 .content-rating-product ul li i{
   margin: 0;
-  color: #dee3e8;
+  color: #CC2B00;
 }
 
 .content-price-product .price {
@@ -1420,7 +1472,8 @@ ol.list-filter-fgl li:before {
 
 #productSimple .carousel-control-next,
 #productSimple .carousel-control-prev {
-  z-index: 100; 
+  z-index: 100;
+  top: 40px;
 }
 
 #productSimple .carousel-control-prev {
@@ -1430,6 +1483,39 @@ ol.list-filter-fgl li:before {
 #productSimple .carousel-control-next span:before,
 #productSimple .carousel-control-prev span:before {
   font-size: 2.5em;
+}
+
+.box-notice-images {
+  background: #CC2B00;
+  color: #fff;
+  padding: 8px 15px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.box-notice-images small {
+  line-height: 1;
+  margin-right: 30px;
+  display: block;
+}
+
+.box-notice-images a {
+  position: absolute;
+  right: 8px;
+  left: auto;
+  top: 10px;
+  bottom: auto;
+  height: 15px;
+}
+
+.box-notice-images a.glightbox i {
+  color: #fff;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  line-height: 1;
+  display: block;
+  font-size: 1.5em;
 }
 
 /* Fim Produto simples */
@@ -1697,7 +1783,6 @@ ol.list-filter-fgl li:before {
   }
   .navbar.navbar-fgl .navbar-collapse {
     margin-top: 15px;
-    background: #f9f9f9;
   }
   .section.section-fgl {
     padding: 15px 0;
@@ -2225,7 +2310,7 @@ button.btn-fgl-cta:active {
   color: #FFF;
 }
 
-.item.item-menu {
+.content-menu .item.item-menu {
   height: 110px;
   position: relative;
 }
@@ -4994,6 +5079,7 @@ button.btn-fgl-cta:active {
   }
   .footer-bottom .footer-bottom-link {
     margin-top: 30px;
+    text-align: center !important;
   }
   .blog-section.style-four .content-text {
     padding-left: 0px !important;
@@ -5023,6 +5109,31 @@ button.btn-fgl-cta:active {
   }
   .feature-section.style-two {
     margin-bottom: 40px !important;
+  }
+  .slider-fgl-wrapper {
+    width: 325px;
+    height: 325px;
+    margin-top: 50px!important;
+  }
+  .hero-slider .slick-slide {
+    width: 325px!important;
+  }
+  .content-hero-slide {
+    margin-top: 25px!important;
+  }
+  .content-hero-slide {
+    height: auto;
+  }
+  .content-hero-slide .cta {
+    padding: 0;
+  }
+  .footer-bottom .row {
+    display: block;
+    text-align: center;
+  }
+  .footer-bottom .row div {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -5239,6 +5350,9 @@ button.btn-fgl-cta:active {
   .google-map-area {
     margin-right: 0px !important;
   }
+  .content-page-slider-topo::before {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -5258,6 +5372,7 @@ button.btn-fgl-cta:active {
   .service-tab-section .tab-content .inner-box {
     padding-left: 20px !important;
   }
+
 }
 
 @media only screen and (max-width: 467px) {
@@ -5271,6 +5386,12 @@ button.btn-fgl-cta:active {
   }
   .main-header.style-two .search-box-btn {
     top: 95px !important;
+  }
+  .section-title, .title-fgl {
+    font-size: 2em;
+  }
+  .content-hero-slide .cta a {
+    width: 100%;
   }
 }
 
@@ -5324,7 +5445,7 @@ button.btn-fgl-cta:active {
   white-space: nowrap;
 }
 
-.carousel-item {
+.carousel-infinite .carousel-item {
   display: inline-block;
   margin-right: 16px;
   flex: 0 0 auto;
@@ -5332,7 +5453,7 @@ button.btn-fgl-cta:active {
   height: 250px;
 }
 
-.carousel-item img {
+.carousel-infinite .carousel-item img {
   width: 100%;
   height: 220px;
   object-fit: cover;

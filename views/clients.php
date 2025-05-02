@@ -65,7 +65,7 @@
             <p class="mb-4">
             Apresentamos com orgulho alguns dos trabalhos que realizamos ao longo dos anos. Cada projeto representa nosso compromisso com o design inteligente, a execução precisa e o resultado que gera valor real para nossos clientes. Veja como ajudamos marcas a se destacarem com fachadas modernas, criativas e funcionais.
             </p>
-            <a href="#" class="btn btn-fgl-cta my-3">
+            <a href="<?= route('nossos-servicos') ?>" class="btn btn-fgl-cta my-3">
             Veja alguns dos nossos trabalhos
             </a>
 

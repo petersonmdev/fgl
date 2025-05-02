@@ -2,7 +2,7 @@
 <section class="about-section">
     <div class="container px-0">
         <div class="row no-gutters flex-column flex-lg-row">
-            <div class="col-lg-6 position-relative">
+            <div class="col-lg-6 position-relative mb-5">
                 <img src="<?= asset_url('images/fgl/empresa/01.jpg') ?>" alt="FGL Comunicação Visual - Fachada" class="img-fluid w-100 h-100 object-fit-cover">
                 <img src="<?= asset_url('images/fundador.jpg') ?>" alt="Fundador FGL" class="position-absolute img-fluid rounded shadow imagem-fundador">
             </div>
@@ -106,7 +106,7 @@
 
         <?php if (!empty($imagesEquipe)) {
             renderGalleryFromImages($imagesEquipe);
-        } ?>       
+        } ?>
             
     </div>
 </section>
@@ -135,7 +135,7 @@
 <section class="section hero-section py-5 bg-white">
     <div class="container-fluid">
         <div class="row align-items-center">                
-            <div class="col-md-6 position-relative pl-0">
+            <div class="col-md-6 position-relative pl-md-0 mb-5">
                 <div class="video-wrapper position-relative">
                 <img src="<?= asset_url('images/capa-video.jpg') ?>" class="img-fluid w-100" id="videoCover" alt="Capa do vídeo">
                 <button class="play-button" id="playBtn">
@@ -200,7 +200,7 @@
                 </div>
             </div>
             <div class="col-lg-6 p-4 p-md-5 position-relative">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2273.157331117224!2d-49.286307208294325!3d-16.627787849171828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef37d9fbb6ff5%3A0x57bf4efa841f6fbc!2sFGL%20Comunica%C3%A7%C3%A3o%20Visual%20-%20Fachadas%20para%20Lojas%20e%20Empresas%2C%20Fachada%20em%20ACM%2C%20Letras%20Caixa%2C%20Luminosos%2C%20Pain%C3%A9is%2C%20T%C3%B3tens%20(Goi%C3%A2nia)!5e0!3m2!1spt-BR!2sbr!4v1745993717254!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2273.157331117224!2d-49.286307208294325!3d-16.627787849171828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef37d9fbb6ff5%3A0x57bf4efa841f6fbc!2sFGL%20Comunica%C3%A7%C3%A3o%20Visual%20-%20Fachadas%20para%20Lojas%20e%20Empresas%2C%20Fachada%20em%20ACM%2C%20Letras%20Caixa%2C%20Luminosos%2C%20Pain%C3%A9is%2C%20T%C3%B3tens%20(Goi%C3%A2nia)!5e0!3m2!1spt-BR!2sbr!4v1745993717254!5m2!1spt-BR!2sbr" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>

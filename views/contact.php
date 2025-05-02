@@ -1,7 +1,7 @@
 <section class="section contact-section">
-  <div class="container px-0">
+  <div class="container">
       <div class="row">
-          <div class="col-lg-7">
+          <div class="col-12 col-lg-7">
             <div class="mb-5">
               <span class="section-title d-inline-block position-relative text-uppercase font-weight-bold text-primary-fgl mb-3">Fale conosco</span>
 
@@ -15,12 +15,12 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-12 col-lg-5">
             <div class="mb-5 text-right">
               <p class="mb-4">
                 Se preferir, pode mandar um oi no Whatsapp
               </p>
-              <a href="#" class="btn btn-fgl-cta mb-3">
+              <a href="<?=$GLOBALS['link_contact_wpp']?>" class="btn btn-fgl-cta mb-3">
               <i class="flaticon-whatsapp" aria-hidden="true"></i> WHATSAPP
               </a>
             </div>

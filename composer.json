@@ -4,7 +4,8 @@
             "App\\": "src/"
         },
         "files": [
-            "helpers/view.php",
+            "src/helpers/functions.php",
+            "src/helpers/view.php",
             "src/Routes/routes.php"
         ]
     },

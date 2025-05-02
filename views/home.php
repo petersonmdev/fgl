@@ -12,7 +12,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-none col-md-6">
+                <div class="d-none d-md-block col-md-6">
                     <div class="slider-fgl-wrapper my-4">
                         <div class="hero-slider slider-fgl">
                             <?php if (!empty($imagesBanner)):
@@ -41,22 +41,22 @@
     <div class="container-fluid content-page-slider-topo">
         <div class="container">
             <div class="row">
-                <div class="col-4 info-box bg-secondary-fgl p-4">
+                <div class="col-12 col-md-4 info-box bg-secondary-fgl p-4">
                     <h4 class="poppins-bold pb-2">PROJETOS DE FACHADAS EM ACM</h4>
                     <p>Modernas, duráveis e com acabamento impecável para destacar sua fachada</p>
-                    <a class="btn btn-fgl-transparent" href="/service.php&id=1">SAIBA MAIS <span>&rarr;</span></a>
+                    <!-- <a class="btn btn-fgl-transparent" href="/service.php&id=1">SAIBA MAIS <span>&rarr;</span></a> -->
                 </div>
 
-                <div class="col-4 info-box bg-primary-fgl p-4">
+                <div class="col-12 col-md-4 info-box bg-primary-fgl p-4">
                     <h4 class="poppins-bold pb-2">PROJETO DE LETRAS CAIXA</h4>
                     <p>Sofisticação e destaque com letras em relevo em diversos materiais, com opções de iluminação para sua marca brilhar</p>
-                    <a class="btn" href="./service.php&id=2">SAIBA MAIS <span>&rarr;</span></a>
+                    <!-- <a class="btn" href="./service.php&id=2">SAIBA MAIS <span>&rarr;</span></a> -->
                 </div>
 
-                <div class="col-4 info-box bg-secondary-fgl p-4">
+                <div class="col-12 col-md-4 info-box bg-secondary-fgl p-4">
                     <h4 class="poppins-bold pb-2">SINALIZAÇÃO INTERNA E EXTERNA</h4>
                     <p>Projetos de Tótens, Placas, Painéis entre outros serviços funcionais para dar mais visibilidade a sua marca e conhecimento do seu negócio</p>
-                    <a class="btn btn-fgl-transparent" href="./service.php&id=2">SAIBA MAIS <span>&rarr;</span></a>
+                    <!-- <a class="btn btn-fgl-transparent" href="./service.php&id=2">SAIBA MAIS <span>&rarr;</span></a> -->
                 </div>
             </div>
         </div>
@@ -186,14 +186,14 @@
                 e o resultado que gera valor real para nossos clientes. Veja como ajudamos marcas a se destacarem
                 com fachadas modernas, criativas e funcionais.
                 </p>
-                <a href="#" class="btn btn-fgl-cta my-3">
+                <a href="<?= route('nossos-servicos') ?>" class="btn btn-fgl-cta my-3">
                 Veja alguns dos nossos trabalhos
                 </a>
             </div>
             <div class="col-md-6 position-relative d-none d-md-block" style="min-height: 500px;">
-                <img src="<?= asset_url('images/fgl/Fachadas/04.jpg') ?>" class="img-fluid shadow position-absolute" style="top: 0; right: 0; width: 65%; z-index: 1;">
-                <img src="<?= asset_url('images/fgl/Fachadas/jaicar.jpeg') ?>" class="img-fluid shadow position-absolute" style="top: 100px; left: 20px; width: 70%; z-index: 2;">
-                <img src="<?= asset_url('images/fgl/Fachadas/hospital-sao-francisco.jpg') ?>" class="img-fluid shadow position-absolute" style="bottom: 0; right: 40px; width: 75%; z-index: 3;">
+                <img src="<?= asset_url('images/fgl/fachadas/04.jpg') ?>" class="img-fluid shadow position-absolute" style="top: 0; right: 0; width: 65%; z-index: 1;">
+                <img src="<?= asset_url('images/fgl/fachadas/jaicar.jpeg') ?>" class="img-fluid shadow position-absolute" style="top: 100px; left: 20px; width: 70%; z-index: 2;">
+                <img src="<?= asset_url('images/fgl/fachadas/hospital-sao-francisco.jpg') ?>" class="img-fluid shadow position-absolute" style="bottom: 0; right: 40px; width: 75%; z-index: 3;">
             </div>
             </div>
         </div>
@@ -202,7 +202,7 @@
     <section class="section hero-section py-5 bg-white">
         <div class="container-fluid">
             <div class="row align-items-center">                
-                <div class="col-md-6 position-relative pl-0">
+                <div class="col-md-6 position-relative pl-md-0 mb-4">
                     <div class="video-wrapper position-relative">
                     <img src="<?= asset_url('images/capa-video.jpg') ?>" class="img-fluid w-100" id="videoCover" alt="Capa do vídeo">
                     <button class="play-button" id="playBtn">

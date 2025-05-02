@@ -159,16 +159,17 @@
 
 	//Footer - marcas parceiras
 	$('.logo-slider').slick({
-		slidesToShow: 4,
+		slidesToShow: 6,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 4000,
 		arrows: false,
 		adaptiveHeight: true,
+		infinite: true,
 		responsive: [
 		  {
 			breakpoint: 768,
-			settings: { slidesToShow: 2 }
+			settings: { slidesToShow: 3 }
 		  },
 		  {
 			breakpoint: 480,
