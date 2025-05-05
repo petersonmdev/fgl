@@ -59,7 +59,7 @@
             <span class="section-title d-inline-block position-relative text-uppercase font-weight-bold text-primary-fgl mb-3">Nossos serviços</span>
 
             <h2 class="font-weight-bold text-uppercase mb-4">
-                PROJETOS QUE TRANSFORMAM NEGOCIOS
+                A FGL LEVA EXCELÊNCIA E QUALIDADE PARA TODO O BRASIL
             </h2>
 
             <p class="mb-4">

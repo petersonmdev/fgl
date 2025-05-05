@@ -96,7 +96,7 @@ if (!function_exists('renderGalleryFromImages')) {
 
                 $imagePath = $images[$index];
                 $imageName = 'Integrante ' . ($index + 1);
-                $flexBasis = 'calc(100% / ' . $itemsPerRow . ' - 1rem)';
+                $flexBasis = 'calc(100% / ' . $itemsPerRow . ' - 10px)';
 
                 echo '<div class="gallery-item" style="flex: 0 0 ' . $flexBasis . ';">';
                 echo '<a href="' . $imagePath . '" class="glightbox" data-gallery="team">';

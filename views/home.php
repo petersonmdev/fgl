@@ -192,7 +192,7 @@
             </div>
             <div class="col-md-6 position-relative d-none d-md-block" style="min-height: 500px;">
                 <img src="<?= asset_url('images/fgl/fachadas/04.jpg') ?>" class="img-fluid shadow position-absolute" style="top: 0; right: 0; width: 65%; z-index: 1;">
-                <img src="<?= asset_url('images/fgl/fachadas/jaicar.jpeg') ?>" class="img-fluid shadow position-absolute" style="top: 100px; left: 20px; width: 70%; z-index: 2;">
+                <img src="<?= asset_url('images/fgl/fachadas/jaicar.jpeg') ?>" class="img-fluid shadow position-absolute" style="top: 160px; left: 20px; width: 70%; z-index: 2;">
                 <img src="<?= asset_url('images/fgl/fachadas/hospital-sao-francisco.jpg') ?>" class="img-fluid shadow position-absolute" style="bottom: 0; right: 40px; width: 75%; z-index: 3;">
             </div>
             </div>

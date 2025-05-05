@@ -117,7 +117,8 @@
 		dots: false,
 		arrows: false,
 		fade: true,
-		responsive: false
+		responsive: true,
+		lazyLoad: 'ondemand',
 	});
 	// Item Slider
 	$('.items-container').slick({

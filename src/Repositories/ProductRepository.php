@@ -11,14 +11,14 @@ class ProductRepository
                 "nome" => "Fachadas",
                 "descricao" => 'Quando falamos em fachadas, estamos falando da identidade visual do cliente. é o primeiro contato do público com o estabelecimento, e por isso, deve ser impactante, bem executada e duradoura. É combinação certa entre materiais – acm, vidro, madeira, aço. e o design inteligente faz toda a diferença. A fachada precisa comunicar, proteger e valorizar o ponto comercial.',
                 "imagem" => asset('assets/images/products/fachadas.jpg'),
-                "categorias" => ["Fachada em ACM", "Pórtico em ACM", "ACM elemento vazado"],
+                "categorias" => ["Fachadas em ACM", "Fachadas em Lona", "ACM elemento vazado"],
                 "link" => "/linha-de-produtos/1"
             ],
             [
                 "nome" => "Letreiros",
                 "descricao" => 'Letreiros são mais do que nomes em destaque, são a voz da marca. Trabalhar com letreiros exige sensibilidade para o layout, escolha de tipografia e principalmente visibilidade. Pode ser: recorte em pvc, letras caixa em aço inox, mdf, acrílico, com ou sem iluminação. Cada projeto exige um estudo técnico e estético minucioso, porque cada letra carrega a personalidade da marca.',
                 "imagem" => asset('assets/images/products/letreiro.jpg'),
-                "categorias" => ["Recorte em pvc", "Letras caixa", "Letras caixa iluminado"],
+                "categorias" => ["Letras Caixa", "Letras em PVC", "Letras em Acrílico"],
                 "link" => "/linha-de-produtos/2"
             ],
             [
@@ -60,7 +60,7 @@ class ProductRepository
                 "nome" => "Revestimento ACM",
                 "descricao" => 'O revestimento em acm é a escolha perfeita para quem busca um visual moderno, limpo e resistente. Além de embelezar, ele protege a estrutura e valoriza a fachada. Versátil e sofisticado, permite diversas aplicações em áreas externas e internas, com excelente acabamento. Quando bem executado, o revestimento em acm transforma qualquer ambiente, alinhando funcionalidade e design com alto padrão.',
                 "imagem" => asset('assets/images/products/revestimento.jpeg'),
-                "categorias" => ["Revestimento termoplástico", "Revestimento mineral", "Revestimento antichamas"],
+                "categorias" => ["Revestimento acm liso", "Revestimento acm vazado", "Revestimento acm calandrado"],
                 "link" => "/linha-de-produtos/8"
             ],
             [

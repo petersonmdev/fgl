@@ -1,3 +1,20 @@
+<section class="services-section py-5">
+    <div class="container">
+        <div class="mb-5">
+            <span class="section-title d-inline-block position-relative text-uppercase font-weight-bold text-primary-fgl mb-2">Inspiração em cada detalhe</span>
+            <h2 class="font-weight-bold text-uppercase">Projetos em destaque</h2>
+        </div>
+        <div class="mb-5">
+            <p>Explore uma seleção de fotos dos nossos trabalhos mais recentes. Cada projeto reflete o cuidado, a técnica e o olhar estratégico que aplicamos em cada etapa — da ideia ao resultado final.</p>
+        </div>
+
+        <?php if (!empty($imagesServicos)) {
+            renderGalleryFromImages($imagesServicos);
+        } ?> 
+            
+    </div>
+</section>
+
 <section class="work-process-section py-5">
     <div class="container">
         
@@ -40,23 +57,6 @@
             </div>
 
         </div>
-    </div>
-</section>
-
-<section class="services-section py-5">
-    <div class="container">
-        <div class="mb-5">
-            <span class="section-title d-inline-block position-relative text-uppercase font-weight-bold text-primary-fgl mb-2">Inspiração em cada detalhe</span>
-            <h2 class="font-weight-bold text-uppercase">Projetos em destaque</h2>
-        </div>
-        <div class="mb-5">
-            <p>Explore uma seleção de fotos dos nossos trabalhos mais recentes. Cada projeto reflete o cuidado, a técnica e o olhar estratégico que aplicamos em cada etapa — da ideia ao resultado final.</p>
-        </div>
-
-        <?php if (!empty($imagesServicos)) {
-            renderGalleryFromImages($imagesServicos);
-        } ?> 
-            
     </div>
 </section>
 
