@@ -12,26 +12,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block col-md-6">
-                    <div class="slider-fgl-wrapper my-4">
-                        <div class="hero-slider slider-fgl">
-                            <?php if (!empty($imagesBanner)):
-                            foreach ($imagesBanner as $index => $image) { ?>
-                                <div class="slider-item-wrapper">
-                                    <div class="slider-item slide1" style="background-image:url(<?= $image ?>)">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="d-none d-md-block col-md-6 my-4">
+                    <?php if (!empty($imagesBanner)): ?>
+                        <div class="hero-slider hero-swiper slider-fgl swiper">
+                            <div class="swiper-wrapper">                         
+                                <?php foreach ($imagesBanner as $index => $image) { ?>
+                                    <div class="swiper-slide slider-item">
+                                        <img class="swiper-item" alt="image-banner-<?=$index?>" src="<?= $image ?>"/>
                                     </div>
-                                </div>
-                            <?php } 
-                            endif;
-                            ?>
+                                <?php } ?>
+                            </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

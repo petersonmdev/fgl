@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import 'swiper/css/bundle';
+@import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+@import 'animate.css';
+@import 'glightbox/dist/css/glightbox.min.css';
+@import '../public/assets/css/style.css';
+@import '../public/assets/css/fgl.css';
+@import '../public/assets/css/fontawesome.min.all.css';

@@ -108,18 +108,17 @@
 	}
 
 	// Hero Slider
-	$('.hero-slider').slick({
-		slidesToShow: 1,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		infinite: true,
-		speed: 300,
-		dots: false,
-		arrows: false,
-		fade: true,
-		responsive: true,
-		lazyLoad: 'ondemand',
-	});
+	// $('.hero-slider').slick({
+	// 	slidesToShow: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 5000,
+	// 	infinite: true,
+	// 	speed: 300,
+	// 	dots: false,
+	// 	arrows: false,
+	// 	fade: true,
+	// 	responsive: true
+	// });
 	// Item Slider
 	$('.items-container').slick({
 		infinite: true,

@@ -58,3 +58,13 @@ if (!function_exists('public_path')) {
         return __DIR__ . '/../public/' . $path;
     }
 }
+
+function asset_path($type) {
+    $manifestPath = __DIR__ . '/../../public/assets/dist/manifest.json';
+    if (!file_exists($manifestPath)) return '';
+
+    $manifest = json_decode(file_get_contents($manifestPath), true);
+    if (!isset($manifest[$type])) return '';
+
+    return '/../../assets/dist/' . $manifest[$type];
+}

@@ -46,9 +46,6 @@
   padding: 0 10px;
   text-align: center;
 }
-#ptTimeSelectCntr .ui-widget-header .ui-icon {
-  background-image: url("images/ui-icons_444444_256x240.png") !important;
-}
 
 #ptTimeSelectCntr #ptTimeSelectCloseCntr {
   display: block;

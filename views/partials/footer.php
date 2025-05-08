@@ -83,30 +83,7 @@
   </div>
   <!--End pagewrapper-->
 
-  <script src="<?= asset_url('plugins/jquery.js') ?>"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="<?= asset_url('plugins/bootstrap.min.js') ?>"></script>
-  <script src="<?= asset_url('plugins/bootstrap-select.min.js') ?>"></script>
-  <!-- Slick Slider -->
-  <script src="<?= asset_url('plugins/slick/slick.min.js') ?>"></script>
-  <!-- FancyBox -->
-  <script src="<?= asset_url('plugins/fancybox/jquery.fancybox.min.js') ?>"></script>
-  <!-- Zoom -->
-  <script src="<?= asset_url('plugins/jquery.zoom.min.js') ?>"></script>
-
-  <script src="<?= asset_url('plugins/jquery.lettering.js') ?>"></script>
-  <script src="<?= asset_url('plugins/validate.js') ?>"></script>
-  <script src="<?= asset_url('plugins/wow.js') ?>"></script>
-  <script src="<?= asset_url('plugins/jquery-ui.js') ?>"></script>
-  <script src="<?= asset_url('plugins/timePicker.js') ?>"></script>
-  <script src="<?= asset_url('js/script.js') ?>"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-  const lightbox = GLightbox({
-    selector: '.glightbox'
-  });
-</script>
+  <script src="<?= asset_path('js') ?>"></script>
 
 </body>
 </html>
